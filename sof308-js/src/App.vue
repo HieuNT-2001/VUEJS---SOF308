@@ -1,8 +1,9 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
 // import TheWelcome from './components/TheWelcome.vue'
-import Bai1 from './Bai1.vue'
-import Bai2 from './Bai2.vue'
+import Bai1 from './components/Bai1.vue'
+import Bai2 from './components/Bai2.vue'
+import State from './components/State.vue';
 </script>
 
 <template>
@@ -51,10 +52,10 @@ import Bai2 from './Bai2.vue'
   </nav>
 
   <div class="container">
-    <div class="container">
-      <div class="row">
-        <Bai2 />
-      </div>
+    <div class="row">
+      <Bai1 />
+      <Bai2 />
+      <State />
     </div>
   </div>
 </template>
