@@ -3,6 +3,7 @@
 // import TheWelcome from './components/TheWelcome.vue'
 import Bai1 from './components/Bai1.vue'
 import Bai2 from './components/Bai2.vue'
+import ClassBinding from './components/ClassBinding.vue';
 import State from './components/State.vue';
 </script>
 
@@ -56,6 +57,7 @@ import State from './components/State.vue';
       <Bai1 />
       <Bai2 />
       <State />
+      <ClassBinding />
     </div>
   </div>
 </template>
