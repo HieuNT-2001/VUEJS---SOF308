@@ -1,6 +1,7 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
 // import TheWelcome from './components/TheWelcome.vue'
+import AsmGD1 from './components/asmGD1.vue'
 import Bai1 from './components/Bai1.vue'
 import Bai2 from './components/Bai2.vue'
 import ClassBinding from './components/ClassBinding.vue'
@@ -74,8 +75,9 @@ import State from './components/State.vue'
       <!-- <Bai1 />
       <Bai2 />
       <State />
-      <ClassBinding /> -->
-      <Form />
+      <ClassBinding />
+      <Form /> -->
+      <AsmGD1 />
     </div>
   </div>
 </template>
