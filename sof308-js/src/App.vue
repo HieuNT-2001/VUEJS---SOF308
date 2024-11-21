@@ -1,12 +1,15 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
 // import TheWelcome from './components/TheWelcome.vue'
-import AsmGD1 from './components/asmGD1.vue'
+import { vShow } from 'vue'
+import AsmGD1 from './components/AsmGD1.vue'
 import Bai1 from './components/Bai1.vue'
 import Bai2 from './components/Bai2.vue'
 import ClassBinding from './components/ClassBinding.vue'
 import Form from './components/Form.vue'
 import State from './components/State.vue'
+import VShow from './components/VShow.vue'
+import VEvent from './components/VEvent.vue'
 </script>
 
 <template>
@@ -72,12 +75,14 @@ import State from './components/State.vue'
 
   <div class="container">
     <div class="row">
-      <!-- <Bai1 />
-      <Bai2 />
-      <State />
-      <ClassBinding />
-      <Form /> -->
-      <AsmGD1 />
+      <!-- <Bai1 /> -->
+      <!-- <Bai2 /> -->
+      <!-- <State /> -->
+      <!-- <ClassBinding /> -->
+      <!-- <Form /> -->
+      <!-- <AsmGD1 /> -->
+      <!-- <VShow /> -->
+      <VEvent />
     </div>
   </div>
 </template>
