@@ -10,6 +10,7 @@ import Form from './components/Form.vue'
 import State from './components/State.vue'
 import VShow from './components/VShow.vue'
 import VEvent from './components/VEvent.vue'
+import FormBinding from './components/FormBinding.vue'
 </script>
 
 <template>
@@ -82,7 +83,8 @@ import VEvent from './components/VEvent.vue'
       <!-- <Form /> -->
       <!-- <AsmGD1 /> -->
       <!-- <VShow /> -->
-      <VEvent />
+      <!-- <VEvent /> -->
+      <FormBinding />
     </div>
   </div>
 </template>
