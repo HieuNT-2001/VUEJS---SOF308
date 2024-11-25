@@ -1,16 +1,12 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
 // import TheWelcome from './components/TheWelcome.vue'
-import { vShow } from 'vue'
-import AsmGD1 from './components/AsmGD1.vue'
-import Bai1 from './components/Bai1.vue'
-import Bai2 from './components/Bai2.vue'
-import ClassBinding from './components/ClassBinding.vue'
-import Form from './components/Form.vue'
-import State from './components/State.vue'
-import VShow from './components/VShow.vue'
-import VEvent from './components/VEvent.vue'
-import FormBinding from './components/FormBinding.vue'
+import { ref } from 'vue'
+import LoginForm from './components/LoginForm.vue'
+
+import Props from './components/Props.vue'
+
+let tinNhan = ref('đây là tin nhắn')
 </script>
 
 <template>
@@ -76,15 +72,8 @@ import FormBinding from './components/FormBinding.vue'
 
   <div class="container">
     <div class="row">
-      <!-- <Bai1 /> -->
-      <!-- <Bai2 /> -->
-      <!-- <State /> -->
-      <!-- <ClassBinding /> -->
-      <!-- <Form /> -->
-      <!-- <AsmGD1 /> -->
-      <!-- <VShow /> -->
-      <!-- <VEvent /> -->
-      <FormBinding />
+      <LoginForm />
+      <Props :message="tinNhan" id="9999" />
     </div>
   </div>
 </template>

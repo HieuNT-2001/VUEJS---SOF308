@@ -7,6 +7,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import ProductTable from './ProductTable.vue'
 
 // Khai báo biến status để lưu trạng thái đăng nhập
 // Trạng thái mặc định là loggedOut
@@ -75,7 +76,10 @@ function logout() {
   </div>
   <div class="card" v-else>
     <div class="card-body">
-      <div class="alert alert-success mt-3" role="alert">Chào mừng bạn...</div>
+      <div class="alert alert-success mt-3" role="alert">
+        Chào mừng bạn {{ user }}
+      </div>
+      <ProductTable :status="status" />
       <div class="text-center">
         <button class="btn btn-primary" @click="logout">Đăng xuất</button>
       </div>
