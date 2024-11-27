@@ -1,12 +1,28 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
 // import TheWelcome from './components/TheWelcome.vue'
-import { ref } from 'vue'
+import { reactive, ref } from 'vue'
 import LoginForm from './components/LoginForm.vue'
 
 import Props from './components/Props.vue'
+import Emits from './components/Emits.vue'
+import BookForm from './components/BookForm.vue'
+import BookTable from './components/BookTable.vue'
 
-let tinNhan = ref('đây là tin nhắn')
+// let tinNhan = ref('đây là tin nhắn')
+
+// let tinNhanEmit = ref('')
+
+// function emitHandle(tinNhan) {
+//   tinNhanEmit.value = tinNhan
+// }
+
+let books = reactive([])
+
+function handleSubmit(data) {
+  books.push(data)
+  console.log(books)
+}
 </script>
 
 <template>
@@ -70,10 +86,20 @@ let tinNhan = ref('đây là tin nhắn')
     </div>
   </nav>
 
-  <div class="container">
+  <div class="container mt-3">
     <div class="row">
-      <LoginForm />
-      <Props :message="tinNhan" id="9999" />
+      <!-- <LoginForm />
+      <Props :message="tinNhan" id="9999" /> -->
+
+      <!-- Khi ấn vào nút Nhấn vào đây... thì
+       hiển thị ra một đoạn thông báo -->
+      <!-- <Emits @emitEvent="emitHandle" /> -->
+      <!-- <h2>{{ tinNhanEmit }}</h2> -->
+
+      <!-- GỢI Ý: -->
+      <BookForm @addBook="handleSubmit" />
+      <BookTable :books="books" />
+      <!-- <BookTable /> -->
     </div>
   </div>
 </template>
