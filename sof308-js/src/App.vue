@@ -1,9 +1,8 @@
 <script setup>
-// import HelloWorld from './components/HelloWorld.vue'
-// import TheWelcome from './components/TheWelcome.vue'
 import { reactive, ref } from 'vue'
-import LoginForm from './components/LoginForm.vue'
+import { RouterView, RouterLink } from 'vue-router'
 
+import LoginForm from './components/LoginForm.vue'
 import Props from './components/Props.vue'
 import Emits from './components/Emits.vue'
 import BookForm from './components/BookForm.vue'
@@ -97,10 +96,14 @@ function handleSubmit(data) {
       <!-- <h2>{{ tinNhanEmit }}</h2> -->
 
       <!-- GỢI Ý: -->
-      <BookForm @addBook="handleSubmit" />
-      <BookTable :books="books" />
+      <!-- <BookForm @addBook="handleSubmit" /> -->
+      <!-- <BookTable :books="books" /> -->
       <!-- <BookTable /> -->
     </div>
+  </div>
+
+  <div id="app">
+    <RouterView />
   </div>
 </template>
 
