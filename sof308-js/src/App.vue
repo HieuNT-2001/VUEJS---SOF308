@@ -102,7 +102,7 @@ function handleSubmit(data) {
     </div>
   </div>
 
-  <div id="app">
+  <div id="app" class="container mt-3">
     <RouterView />
   </div>
 </template>
