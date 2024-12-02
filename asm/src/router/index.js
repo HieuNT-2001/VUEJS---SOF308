@@ -1,5 +1,6 @@
-import StudentForm from '@/components/StudentForm.vue'
-import StudentList from '@/components/StudentList.vue'
+import AddForm from '@/components/Student/AddForm.vue'
+import EditForm from '@/components/Student/EditForm.vue'
+import Index from '@/components/Student/Index.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 // import HomeView from '../views/HomeView.vue'
 
@@ -21,11 +22,16 @@ const router = createRouter({
     // },
     {
       path: '/students',
-      component: StudentList,
+      component: Index,
     },
     {
       path: '/students/add',
-      component: StudentForm,
+      component: AddForm,
+    },
+    {
+      path: '/students/edit/:id',
+      component: EditForm,
+      props: true,
     },
   ],
 })

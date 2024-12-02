@@ -13,11 +13,20 @@ async function findAll() {
   }
 }
 
+async function remove(id) {
+  try {
+    await axios.delete(`http://localhost:3000/students/${id}`)
+    findAll()
+  } catch (error) {
+    console.log(error)
+  }
+}
+
 findAll()
 </script>
 
 <template>
-  <h1 class="text-center mb-3">Danh Sách Sinh Viên</h1>
+  <h1 class="text-center mb-3">List Student</h1>
   <table class="table">
     <thead>
       <tr>
@@ -26,6 +35,7 @@ findAll()
         <th scope="col">Fullname</th>
         <th scope="col">Age</th>
         <th scope="col">Email</th>
+        <th scope="col">Action</th>
       </tr>
     </thead>
     <tbody>
@@ -35,10 +45,14 @@ findAll()
         <td>{{ student.fullname }}</td>
         <td>{{ student.age }}</td>
         <td>{{ student.email }}</td>
+        <td>
+          <RouterLink :to="`/students/edit/${student.id}`" class="btn btn-warning">Edit</RouterLink>
+          <button class="btn btn-danger" @click="remove(student.id)">Remove</button>
+        </td>
       </tr>
     </tbody>
   </table>
-  <RouterLink to="/students/add" class="btn btn-primary">Thêm sinh viên</RouterLink>
+  <RouterLink to="/students/add" class="btn btn-primary">Add more student</RouterLink>
 </template>
 
 <style scoped></style>

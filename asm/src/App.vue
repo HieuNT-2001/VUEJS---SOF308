@@ -70,7 +70,7 @@
 
   <div class="container mt-3">
     <div class="row">
-      <RouterView @addStudent="handleAddStudent" />
+      <RouterView />
     </div>
   </div>
 </template>
