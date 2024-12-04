@@ -28,12 +28,6 @@
   ],
   "students": [
     {
-      "id": "1",
-      "fullname": "studentName 1",
-      "age": "21",
-      "email": "example@gmail.com"
-    },
-    {
       "id": "2",
       "fullname": "studentName 2",
       "age": "22",
@@ -74,6 +68,18 @@
       "fullname": "Le Thanh Tu",
       "age": 19,
       "email": "tu@fpt.edu.vn"
+    },
+    {
+      "id": "111",
+      "fullname": "abc",
+      "age": 12,
+      "email": "a@gmail.com"
+    },
+    {
+      "id": "123",
+      "fullname": "dnsdkj",
+      "age": 23,
+      "email": "abc@gmail.com"
     }
   ]
 }

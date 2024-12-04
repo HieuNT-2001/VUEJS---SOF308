@@ -1,6 +1,6 @@
-import AddForm from '@/components/Student/AddForm.vue'
-import EditForm from '@/components/Student/EditForm.vue'
-import Index from '@/components/Student/Index.vue'
+import AddForm from '@/components/student/AddForm.vue'
+import EditForm from '@/components/student/EditForm.vue'
+import Index from '@/components/student/Index.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 // import HomeView from '../views/HomeView.vue'
 
